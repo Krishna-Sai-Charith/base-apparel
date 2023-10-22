@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    background-color: #FFF9F9;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.pattern-img{
+    left: 0px;
+    width: 60vw;
+    overflow: hidden;
+}
+.pattern{
+    height: 100vh;
+    width: 68vw;
+}
+.image-side-mob{
+display: none;
+}
+.content-side{
+    height: 400px;
+    width: 400px;
+    margin-left:175px;
+    margin-top: 30px;
+    z-index: 1;
+    position: absolute;
+}
+.logo{
+    margin-top: 50px;
+    margin-bottom: 125px;
+}
+.logo-img{
+    width: 130px;
+}
+.coming-soon{
+    font-size:70px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    color: #110708;
+}
+.info-text{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    color: hsl(0, 36%, 70%);
+}
+.we-are{
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+#email{
+    border-radius: 25px;
+    width: 370px;
+    height: 40px;
+    border:hsl(0, 36%, 70%) 1px solid;
+}
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+input, select, textarea{
+    color: #ff0000;
+}
+
+textarea:focus, input:focus {
+    color: hsl(0, 93%, 68%);
+}
+.lady-img{
+    height: 100vh;
+}
+.input-container{
+    display: flex;
+}
+input{
+    outline: none;
+    padding-left: 25px;
+    background-color: #FFF9F9;
+}
+input:focus{
+    background-color: white;
+}
+.arrow{
+    height: 12px;
+    width: 12px;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: translateX(-55px);
+    width:80px;
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    height: 45px;
+    border: 0px solid white;
+    box-shadow: 2px 2px 15px 8px #FFDBDC;
+}
+button:active{
+    background-image: linear-gradient(135deg ,hsl(0, 44%, 78%),hsl(0, 56%, 68%));
+}
+@media (max-width:375px){
+.logo{
+  width: 100vw; 
+  margin-top: 40px; 
+  margin-bottom: 40px;
+  margin-left: -80px;
+}
+.content-side{
+    margin:0px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+.container{
+    overflow: hidden;
+}
+.coming-soon{
+    margin-left: -25px;
+}
+.image-side{
+    width: 20vw; 
+    display: none;
+ }
+ .image-side-mob{
+     display: block;
+     height: 40vh;
+ }
+ .lady-img-mob{
+     width: 100%;
+ }
+ .info-text{
+    width: 345px;
+    margin-left: 8px;
+ }
+ .input-container{
+    margin-bottom: 50px;
+ }
+}
